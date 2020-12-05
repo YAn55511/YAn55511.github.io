@@ -1,0 +1,92 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+@font-face{
+	font-family: Pacifico Regular;
+	src: url(../fonts/Pacifico-Regular.ttf);
+
+
+}
+
+main{
+	width: 70%;
+	padding:50px;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #fff;
+	box-shadow:0 0 20px 10px #16697A;
+}
+body{
+	background:#efefef;
+	background-color: orange;
+	font-family: Pacifico Regular;
+
+}
+.photo{
+
+	width: calc(50% - 40px);
+	height: calc((35vw - 40px) / 16 * 9);
+	margin: 20px;
+	background-color: orange;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.50;
+	transition: 0.50s;
+
+}
+.photo:hover{
+	opacity: 1;
+	transform: scale(1.2) rotate(25deg);
+	z-index: 10;
+	box-shadow: 0 0 20px 30px #efefef;
+}
+
+h1{
+	width:100%;
+	text-align: center;
+	font-size: 48px;
+
+}
+
+.photo1{
+	background-image: url(../img/web01.jpg)
+}
+.photo2{
+	background-image: url(../img/web02.jpg)
+}
+.photo3{
+	background-image: url(../img/web03.jpg)
+}
+.photo4{
+	background-image: url(../img/web04.jpg)
+}
+.photo5{
+	background-image: url(../img/web05.jpg)
+}
+.photo6{
+	background-image: url(../img/web06.jpg)
+}
+.photo7{
+	background-image: url(../img/web07.jpg)
+}
+.photo8{
+	background-image: url(../img/web08.jpg)
+}
+.photo9{
+	background-image: url(../img/web09.jpg)
+}
+.photo10{
+	background-image: url(../img/web10.jpg)
+}
+.photo11{
+	background-image: url(../img/web11.jpg)
+}
+.photo12{
+	background-image: url(../img/web11.jpg)
+}
+
