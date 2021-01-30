@@ -1,0 +1,47 @@
+<!-- Вставить после main -->		
+		<aside class="right-aside">
+			<div class="product js-product">
+				<div class="product-info">Multi & Navy</div>
+				<div class="product-title">Vans Vault Old Skool LX</div>
+				<img src="img/vans1.jpg" alt="Vans Vault Old Skool LX">
+				<div class="product-info">Стоимость</div>
+				<div class="product-price">7899р.</div>
+			
+				<div class="size-box">
+					<div class="size size__active">39</div>
+					<div class="size">40</div>
+					<div class="size">41</div>
+					<div class="size">42</div>
+				</div>
+
+				<div class="big-add-btn">Купить</div>
+
+				<div class="product-info">Описание</div>
+				<div class="product-text">On-court legend turned skatepark go-to, the Blazer Mid has found a home in many venues since its introduction back in ’72. But it’s in Nike SB guise here, with a durable suede construction and Zoom Air cushioning destined for a life spent on a skateboard. The bold blue colourway reflects it, too, greatly deviating from the more muted palettes that conformed to basketball’s strict uniform codes at the time of the model’s debut.</div>
+
+			</div>
+		</aside>
+
+
+<!-- Вставить в скрипт -->
+
+		$('.add-btn').click(function() {
+				let product = $(this).parent();
+
+				let src = $(product).find('img').attr('src')
+				let title = $(product).find('.product-title').text();
+				let info = $(product).find('.product-info').first().text();
+				let price = $(product).find('.product-price').text();
+
+				$('.js-product').find('img').attr('src', src)
+				$('.js-product').find('.product-title').text(title)
+				$('.js-product').find('.product-price').text(price)
+				$('.js-product').find('.product-info').first().text(info)
+			})
+
+			$('.size').click(function() {
+				$('.size').each(function() {
+					$(this).removeClass('size__active');
+				})
+				$(this).addClass('size__active');
+			})
